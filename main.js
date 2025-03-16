@@ -43,13 +43,16 @@ function getTotal() {
 
 
 /* import the data of product from the local storage */
-let dataPro;
+/* let dataPro;
 
 if (localStorage.value != 0) {
     dataPro = JSON.parse(localStorage.product)
 } else {
     dataPro = [];
 }
+ */
+
+let dataPro = localStorage.getItem("product") ? JSON.parse(localStorage.getItem("product")) : [];
 
 
 /* check if count number */

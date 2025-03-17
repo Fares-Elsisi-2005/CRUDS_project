@@ -109,3 +109,20 @@ td {
     display: none;
     color: #a00d02;
 }
+
+@media (max-width: 768px) {
+    .crud {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+}
